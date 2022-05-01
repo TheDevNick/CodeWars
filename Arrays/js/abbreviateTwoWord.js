@@ -19,7 +19,6 @@ patrick feeney => P.F
 */
 
 function abbrevName(name){
-
     // code away
     let split = name.split(' ')
     return `${split[0].charAt(0).toUpperCase()}.${split[1].charAt(0).toUpperCase()}`
