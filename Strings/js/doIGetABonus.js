@@ -15,7 +15,7 @@ E: bonusTime(90000, true) => £900000
     bonusTime(80000, false) => £80000
 P: function with sal, bon as args
     conditional to check to return sal * 10 or just sal
-    return total sal as a string with £ prefixed at the beginning.
+    return total sal as a string with £ prefixed at the beginning
 */
 
 function bonusTime(salary, bonus) {
