@@ -19,8 +19,17 @@ PSEUDOCODE:
 */
 
 function mergeArrays(arr1, arr2) {
+    if (arr1.length === 0 && arr2.length === 0) {
+        return []
+    }
     const merged = arr1.concat(arr2.filter((item) => arr1.indexOf(item) < 0))
     return merged.sort((a,b) => a - b)
 }
 
 console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]))
+
+/* 
+arr2 : 1, 2, 3, 4, 5, 10, 12
+
+arr1: 1, 3, 5, 7, 9, 11, 12
+*/
