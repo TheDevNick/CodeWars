@@ -10,8 +10,6 @@ Examples
 "-7" --> -7
 */
 
-let stringToNumber = function(str){
-    return Number(str);
-  }
+let stringToNumber = str => Number(str)
 
   console.log(stringToNumber('605'))
