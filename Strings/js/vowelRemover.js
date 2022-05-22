@@ -13,10 +13,12 @@ P: function will take a string
 R: string will be returned with no lowercase vowels (a, e, i, o, u )
 E: "goodbye"   -->  "gdby"
 P: - find out if any vowels exist
-- find the index of that vowel in the string and remove it
+- remove the vowels
 
 */
 
 function shortcut (string) {
-    return '';
-  }
+   return string.replace(/[aeiou]/g, '')
+}
+
+console.log(shortcut('hello'))
