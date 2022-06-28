@@ -9,10 +9,11 @@ You can assume the array will always be valid, and there will always be one corr
 P: fucntion takes in a integer array
 R: function returns a string
 E: isSortedAndHow([1, 2]) => 'yes, ascending'
-P: - compare the array given vs a sorted version of the array
+P: - use the every method to check if the array is increasing or decreasing
+  - check the current array element vs the previous array element to see it the current element is higher, if so, it is asceding order
 */
 
-function isSortedAndHow(array) {
+function isSortedAndHow(arr) {
     return arr.every((x,i) => i == 0 || arr[i] >= arr[i-1]) ? 'yes, ascending': arr.every((x,i) => i == 0 || arr[i] <= arr[i-1]) ?'yes, descending':'no'
   }
 
