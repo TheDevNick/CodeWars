@@ -30,4 +30,4 @@ function maxTriSum(numbers){
   }
 
 
-console.log(maxTriSum([3,2,6,8,2,3])) // => 17
+console.log(maxTriSum([3,2,6,8,2,3])) // => 17 (8 + 6 + 3)
