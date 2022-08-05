@@ -23,12 +23,12 @@ let count = 0
 // lets loop through the array
     for (let i = 0; i < arr.length; i++) {
         //  add condition to check if consecutive
-        // if(arr[i] + 1 === arr[i + 1]) {  // if 1 === 1+1       1 + 1
-        //     count++
-        // }
-        console.log(arr[i] + 1 === arr[i + 1]);
+        if(arr[i] + 1 != arr[i + 1] - 1) {  // if 1 === 1+1       1 + 1
+            count++
+        }
+        // console.log(arr[i] + 1 === arr[i + 1]);
     }
-    // return count
+    return count
 }
 
 console.log(pairs([1,2,5,8,-4,-3,7,6,5]))
