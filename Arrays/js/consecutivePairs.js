@@ -16,19 +16,20 @@ P: see inside of function
 */
 
 function pairs(arr) {
-// create a variable to hold the count
+// // create a variable to hold the count
 let count = 0
-// first lets sort the array to make things easier
-    arr.sort((a, b) => a -b)
-// lets loop through the array
-    for (let i = 0; i < arr.length; i++) {
+
+
+// // lets loop through the array
+    for (let i = 0; i < arr.length; i+= 2) {
         //  add condition to check if consecutive
-        if(arr[i] + 1 != arr[i + 1] - 1) {  // if 1 === 1+1       1 + 1
+        if(Math.abs(arr[i] - arr[i + 1]) === 1) { 
             count++
         }
-        // console.log(arr[i] + 1 === arr[i + 1]);
     }
     return count
 }
 
 console.log(pairs([1,2,5,8,-4,-3,7,6,5]))
+console.log(pairs([21, 20, 22, 40, 39, -56, 30, -55, 95, 94]))
+
