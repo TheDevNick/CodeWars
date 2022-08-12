@@ -14,13 +14,17 @@ P: see inside of function
 */
 
 function maxDiff(arr) {
-// first lets get the min and max values from the array
-const max = Math.max(...arr)
-const min = Math.min(...arr)
-// 
-// we could have just did return Math.max(...arr) - Math.min(...arr) 
-return arrmax - min
-}
+    // first lets get the min and max values from the array
+    const max = Math.max(...arr)
+    const min = Math.min(...arr)
+    // 
+    // we could have just did return Math.max(...arr) - Math.min(...arr) 
+    if(arr.length === 0 || arr.length < 2) {
+      return 0
+    } else {
+     return max - min 
+    }
+    }
 
 console.log(maxDiff([1, 2, 3, 4]))//3
 console.log(maxDiff([1, 2, 3, -4]))//7
