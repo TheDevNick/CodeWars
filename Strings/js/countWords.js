@@ -18,7 +18,11 @@ countWords(" Hello") // returns 1
 
 function countWords(words) {
     // put the words into an array and count the array length
+    // trim whitspace so the count will not get thrown off
+    words = words.trim()
     return words.split(' ').length
 }
 
-console.log(countWords('Hello, World!'), 2)
+console.log(countWords('Hello'), 1)
+console.log(countWords(' Hello'), 1)
+console.log(countWords("No results for search term `s`"), 6) 
