@@ -13,12 +13,23 @@
 	is 1
 	the 1, 2
 */
-let plainObj = {
-    arr1: ['the cat is black'],
-    arr2: ['the dog barks']
-}
-function findElementLines(obj) {
-    return plainObj.arr1
-}
 
-console.log(findElementLines(plainObj))
+
+
+
+const data = ["the foo is black", "the bar barks"]
+
+let output = []
+
+data.forEach((word, line) => {
+  line++ // because line numbers start from 1
+  // split into words and include line number
+  const words = word.split(" ").map(text => ({text, line,}))
+  output.push(...words)
+})
+
+// sort alphabetically
+// output = output.sort((a, b) => b - a)
+
+console.log("Data sorted alphabetically with line numbers:", output)
+
