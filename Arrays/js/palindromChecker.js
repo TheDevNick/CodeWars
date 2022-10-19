@@ -7,15 +7,25 @@ e.g palindromeChecker('racecar') // will return true
 -- 
 */
 
+// function palindromeChecker(text) {
+//   // Code goes here
+//   const reversedText = text.split("").reverse().join("").toLowerCase()
+//   const isPalindrome = text.toLowerCase() === reversedText
+//   // turn text into array
+//   // create variable to store the word in reverse
+//   // compare original text vs reversed text
+//   // return true if they match , false if not
+//   return isPalindrome
+// }
+
 function palindromeChecker(text) {
-  // Code goes here
-  const reversedText = text.split("").reverse().join("").toLowerCase()
-  const isPalindrome = text.toLowerCase() === reversedText
-  // turn text into array
-  // create variable to store the word in reverse
-  // compare original text vs reversed text
-  // return true if they match , false if not
-  return isPalindrome
+  var textLen = text.length
+  for (var i = 0; i < textLen / 2; i++) {
+    if (text[i] !== text[textLen - 1 - i]) {
+        return false
+    }
+  }
+  return true
 }
 
 console.log(palindromeChecker("racecar"), true)
