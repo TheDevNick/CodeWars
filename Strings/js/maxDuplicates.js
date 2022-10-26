@@ -5,7 +5,7 @@ let maxNum = 0
 function findMaxDup(arr){
 
     for (let num of arr) {
-        Object.hasOwn(numMap, numMap[num]) ? numMap[num]++ : numMap[num] = 1
+        Object.hasOwn(numMap, numMap[num]) ?  numMap[num]++ : numMap[num] = 1
     }
 
     for (let num in numMap){
@@ -18,4 +18,11 @@ function findMaxDup(arr){
     return maxNum
 }
 
-console.log(findMaxDup([1, 2, 2]), 2)
+// console.log(findMaxDup([1, 2, 2]), 2)
+
+function reverseString(str) {
+    const reversedStr = str.split('').reverse().join('')
+    return reversedStr
+}
+
+console.log(reverseString('nick'))
