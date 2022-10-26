@@ -10,6 +10,11 @@ function solve(arr) {
     // make sure there is no duplicates in the sub arrays
     // multiply the the sizes of each subarray
     return arr.map(subArr => new Set(subArr).size).reduce((acc, curr) => acc * curr , 1)
+    // let sum = 1
+    // for (let i = 0; i < noDupArr.length; i++) {
+    //     sum *= noDupArr[i]
+    // }
+    // return sum
 }
 
 console.log(solve([[1, 2], [4], [5, 6]]), 4) //[145][146][245][246]
