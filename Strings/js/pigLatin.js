@@ -20,7 +20,7 @@ function translateToPigLatin(word) {
     word = word.toLowerCase()
     const vowels = ['a', 'e', 'i', 'o', 'u']
     let vowelIndex = 0
-    const wordArray = word.split('')//['p', 'i', 'g']
+    
     // if the word starts with a vowel, then just add 'way' to the end of it
     if (vowels.includes(word[0])) {
         return word + 'way'
