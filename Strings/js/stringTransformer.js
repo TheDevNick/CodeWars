@@ -21,7 +21,6 @@ function stringTransformer(str) {
   // turn array back to string and then turn it back into array which now has the casing transformation ['bOB hELLO']
   // reverse the array 
 //   turn back to string using .join
-  let test = []
   const stringArr = str.split("")
   const transformedStr = stringArr
     .map((word) => {
