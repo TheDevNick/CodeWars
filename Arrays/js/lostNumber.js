@@ -19,7 +19,7 @@ Note: N may be 1 or less (in the latter case, the first array will be []).
 //     // if they are not equal in length run a filter method
 //     // check if the indexOf the elements in the first array is missing from the index of the elmnts in sencond arr
 const findDeletedNumber = (arr, mixedArr) => {
-    return arr.length === mixedArr.length ? 0 : arr.filter(num => mixedArr.indexOf(num) === -1 ).join('')
+    return arr.length === mixedArr.length ? 0 : arr.filter(num => mixedArr.indexOf(num) === -1 )[0]
 }
 
 console.log(findDeletedNumber([1,2,3,4], [3,4,1]), 2)
