@@ -22,4 +22,5 @@ const arrayDiff = (listA, listB) => listA.filter((num) => !listB.includes(num))
 
 console.log(arrayDiff([1, 2, 2, 2, 3], [2]), [1, 3])
 console.log(arrayDiff([1, 2], [1]), [2])
+console.log(arrayDiff([1, 2], [1, 2]), [])
 console.log(arrayDiff([1, 2, 0, 1], [1]), [2,0])
