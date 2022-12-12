@@ -7,9 +7,7 @@ Examples:
 
 3 has no matching negative appearance
 
-[-3, 1, 2, 3, -1, -4, -2] => -4
-
--4 has no matching positive appearance
+[-3, 1, 2, 3, -1, -4, -2] => -4ve appearance
 
 [1, -1, 2, -2, 3, 3] => 3
 
